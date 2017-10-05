@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>phonegap & jquery mobile boilerplate</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+  <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+  
+  <script>
+    var userAgent = navigator.userAgent + '';
+    if (userAgent.indexOf('iPhone') > -1) {
+      document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+      var mobile_system = 'iphone';
+    } else if (userAgent.indexOf('Android') > -1) {
+      document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+      var mobile_system = 'android';
+    } else {
+      var mobile_system = '';
+    }
+  </script>
+  
+  <script src="js/lib/jquery.js"></script>
+  <!-- your scripts here -->
+  <script src="js/app/app.js"></script>
+  <script src="js/app/bootstrap.js"></script>
+  <script src="js/lib/jquery.mobile.js"></script>
+  
+  </head>
+  <body>
+    
+    <div data-role="page">
+
+    	<div data-role="header">
+    		<h1>The Ashesi Info Page</h1>
+    	</div><!-- /header -->
+	<div class="container">
+    	<div class="panel-group">
+    		<div class="panel panel-info">
+    			<div class="panel-heading">Computer Science</div>
+    			<div class="panel-body">Ashesi's Computer Science programme focuses not</br> 
+    				only on software design and programming, but also on empowering young</br>
+    				people to be at the forefront of African growth by harnessing the power</br>
+    				of technology. Students in the Computer Science programme are taken through</br>
+    				robust foundational courses and projects that prepare them to engage new</br>
+    				technologies, and create tech solutions for African needs.
+    			</div>
+    		</div>
+    		<div class="panel panel-info">
+    			<div class="panel-heading">Management Information Systems</div>
+    			<div class="panel-body">The Management Information Systems program at Ashesi</br>
+    				University seeks to train graduates, who are able to influence business</br>.
+    				and organisational strategy through deep understanding of information</br>
+    				technology use. This interdisciplinary program trains graduates who are</br>
+    				uniquely empowered to enhance the competitiveness of enterprises in the</br>
+    				new knowledge economy.
+    			</div>
+    		</div>
+    		<div class="panel panel-info">
+    			<div class="panel-heading">Business Administration</div>
+    			<div class="panel-body">Ashesi’s business programme depends on the foundation</br>
+    				set by the core liberal curriculum, and prepares students to be leaders who</br>
+    				can recognise opportunities in the needs of society and build businesses to</br>
+    				help solve them. The business programme takes students through global business</br>
+    				practices, with a focus on Africa’s dynamic economy. Class projects are done in</br>
+    				partnership with local businesses in order to help students learn practical skills</br>
+    				through solving real-world problems.
+    			</div>
+    		</div>
+    		<div class="panel panel-info">
+    			<div class="panel-heading">Engineering</div>
+    			<div class="panel-body">Africa needs better-designed infrastructure and new, efficient</br>
+    				products tailored for local needs. Ashesi’s Engineering majors – Mechanical, Electrical</br> 
+    				and Electronic and Computer Engineering - with a focus on design, entrepreneurship and</br>
+    				problem solving, aims to empower students to drive the important innovations that Africa</br>
+    				needs. The industry-responsive curriculum adapts from the models of some of the world’s</br>
+    				best engineering schools to foster systems thinking, real-world learning and design.
+    			</div>
+    		</div>
+    	</div>
+    		<!--<p>This is a single page boilerplate template that you can copy to build your first jQuery Mobile page. Each link or form from here will pull a new page in via Ajax to support the animated page transitions.</p>
+    		<p>This template is standard HTML document with a single "page"</p>-->
+    </div><!-- /content -->
+
+    	<div data-role="footer">
+    		<h4>Thank you for visiting us.</h4>
+    	</div><!-- /footer -->
+
+    </div><!-- /page -->
+    
+  </body>
+</html>
